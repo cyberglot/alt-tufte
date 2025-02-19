@@ -1,4 +1,4 @@
-#import "@preview/tufte-memo:0.1.2": *
+#import "/lib.typ": *
 
 #show: template.with(
   title: [Tufte inspired Typst template],
@@ -21,9 +21,9 @@
   document-number: [Version 0.1.2],
   abstract: [This Typst template adopts many aspects of the design and typography of Edward Tufte's books. The document itself demonstrates the functionality and usage of the template, including setup, sidenotes, figure display, citations, and more.],
   publisher: [Product Engineering Department],
-  distribution: [authorized personnel],
-  toc: false,
-  footer-content: ([If the footer-content argument in the template call takes the form of an array, then the first item in that array is displayed here, as you see it, and the second item in that array is displayed on all subsequent pages after the first. If footer-content is not an array (and also not none), then the same content is displayed on all pages.],[This is the second element of the footer-content array, so it is displayed on all pages after the first.]),
+  // distribution: [authorized personnel],
+  toc: true,
+  // footer-content: ([If the footer-content argument in the template call takes the form of an array, then the first item in that array is displayed here, as you see it, and the second item in that array is displayed on all subsequent pages after the first. If footer-content is not an array (and also not none), then the same content is displayed on all pages.],[This is the second element of the footer-content array, so it is displayed on all pages after the first.]),
   draft: false,
   bib: bibliography("references.bib")
 )
